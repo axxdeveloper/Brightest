@@ -1,0 +1,20 @@
+1398037350966	Rename field 'button1'
+1398038243213	Rename type 'MainActivity'
+1398038370784	Rename field 'fragment_main'
+1398095382406	Delete element
+1398095446645	Delete element
+1398212439040	Rename resource 'red-book.png'
+1398475238477	Delete element
+1398477097861	Extract local variable 'playDrawable'
+1398477320537	Delete elements
+1398477325945	Delete elements
+1398477332178	Delete elements
+1398477337193	Delete elements
+1398478385968	Rename type 'StudyTimeDuration'
+1398478591871	Delete element
+1398480547210	Rename type 'StudyTimeDuration'
+1398482092971	Rename field 'builder'
+1398488977528	Move compilation unit
+1398527676210	Rename method 'duration'
+1398527724429	Rename local variable 'duration'
+1398527731824	Rename method 'durationString'

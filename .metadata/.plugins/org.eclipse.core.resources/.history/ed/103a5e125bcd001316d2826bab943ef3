@@ -1,0 +1,40 @@
+package net.studykeeper.time;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+public class StudyTime {
+
+	private Duration.Builder durationBuilder;
+	private List<Duration> durations = new LinkedList<Duration>();
+	
+	private StudyTime() {
+		this.durationBuilder = new Duration.Builder();
+	}
+
+	public static StudyTime newInstance() {
+		return new StudyTime();
+	}
+
+	public void start() {
+		durationBuilder.startTimeInMillis(System.currentTimeMillis());
+	}
+	
+	public void stop() {
+		durations.add(durationBuilder.build());
+	}
+	
+	public String totalDurationAsString() {
+		long durationInMillis = 0;
+		for ( Duration d: durations ) {
+			durationInMillis += d.durationInMillis();
+		}
+	}
+	
+	public Duration duration() {
+		return new Duration(startTimeInMillis, System.currentTimeMillis());
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package net.studykeeper;
+
+import javax.xml.datatype.Duration;
+
+public class StudyTime {
+
+	public static StudyTime start() {
+		return new StudyTime();
+	}
+
+	
+	
+	
+	
+}
