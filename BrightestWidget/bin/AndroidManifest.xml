@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.brightest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.provider.Settings.System.SCREEN_BRIGHTNESS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="net.brightest.BrightestWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/wdiget" />
+        </receiver>
+
+        <activity android:name="net.brightest.EmptyBrightnessActivity"
+            android:taskAffinity="com.antonc.phone_schedule.Dummy"
+            android:excludeFromRecents="true"
+            android:theme="@style/EmptyBrightnessActivity"></activity>
+        
+    </application>
+
+</manifest>
