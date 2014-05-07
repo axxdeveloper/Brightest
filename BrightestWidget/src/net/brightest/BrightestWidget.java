@@ -1,5 +1,6 @@
 package net.brightest;
 
+import net.brightest.R;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
