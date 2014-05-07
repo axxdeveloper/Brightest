@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.brightest"
-    android:versionCode="2"
-    android:versionName="Brightest" >
+    android:versionCode="3"
+    android:versionName="Brightest">
 
     <uses-sdk
         android:minSdkVersion="8"
